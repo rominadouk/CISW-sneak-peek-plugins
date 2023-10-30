@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Plugins Lesson: Sneaker Gallery</title>
+    <!-- GOOGLE FONTS HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+
+    
+    <!-- Tilted Page Scroll CSS -->
+    <link rel="stylesheet" href="tiltedpage-scroll.css">
+    <!-- Skippr Slideshow CSS -->
+    <link rel="stylesheet" href="skippr.css">
+    <!-- Nano Gallery CSS (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/css/nanogallery2.woff.min.css">
+
+    <!-- Your Custom CSS Goes Here -->
+    <link rel="stylesheet" href="styles.css"></link>
+
+
+    <!-- jQuery Goes Here -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js" defer></script>
+
+    <!-- Tilted Page Scroll Script-->
+    <script src='jquery.tiltedpage-scroll.js' defer></script>
+    
+    <!-- VIDE Background Video Script -->
+    <script src="jquery.vide.js" defer></script>
+
+    <!-- SKIPPR Script-->
+    <script src="skippr.js" defer></script>
+
+    <!-- NanoGallery2 Script (CDN) -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/nanogallery2/3.0.5/jquery.nanogallery2.min.js" defer></script>
+
+    <!-- Link to Custom Script goes here -->
+    <script src="script.js" defer></script>
+
+</head>
+<body>
+
+    <div class='main'>
+        <!-- First Page -->
+        <section id='screen1' class='page1 screen' style="width: 1000px; height: 100vh; opacity:0.75; width: 100vw"
+        data-vide-bg='/assets/videos/white-shoe.mp4' data-vide-options="loop: true, muted: true, position: 0% 0%">
+        <div class="header-text">
+            <h1>SNEAK PEEK</h1>
+            <div id='header-blurbs'>
+                <p>Save |</p>
+                <p>Show off |</p>
+                <p>Shuffle</p>
+            </div>
+
+        </div>
+        </section>
+        <!-- Second Page -->
+        <section id='screen2' class='page2 screen'>
+            <h2>Slide In</h2>
+            <div id="container">
+                <div id="theTarget">
+                    <div style="background-image: url(assets/images/img1.png)">
+                        <p>Black Cement 3</p>
+                    </div>
+                    <div style="background-image: url(assets/images/img2.png)">
+                        <p>Bred 11</p>
+                    </div> 
+                    <div style="background-image: url(assets/images/img3.png)">
+                        <p>Concord 11</p>
+                    </div>                  
+                    <div style="background-image: url(assets/images/img4.png)">
+                        <p>Fire Red 5</p>
+                    </div>                    
+                    <div style="background-image: url(assets/images/img5.png)">
+                        <p>Grinch Kobes</p>
+                    </div>                    
+                    <div style="background-image: url(assets/images/img6.png)">
+                        <p>Infrared 6</p>
+                    </div>                    
+                    <div style="background-image: url(assets/images/img7.png)">
+                        <p>Nike x Off White Air Max</p>
+                    </div>                    
+                    <div style="background-image: url(assets/images/img8.png)">
+                        <p>Off White Air Presto</p>
+                    </div>                    
+                </div>    
+            </div>
+        </section>
+        <!-- Last Page -->
+        <section id='screen4' class='last-page screen'>
+            <h2>Gallery</h2>
+            <div id="nanogallery2" data-nanogallery2>
+                <a  href="assets/images/img1.png" data-ngThumb="assets/images/img1.png"> Black Cement 3 </a>
+                <a href="assets/images/img2.png" data-ngThumb="assets/images/img2.png"> Bred 11 </a>
+                <a  href="assets/images/img3.png" data-ngThumb="assets/images/img3.png"> Concord 11 </a>
+                <a href="assets/images/img4.png" data-ngThumb="assets/images/img4.png"> Fire Red 5 </a>
+                <a  href="assets/images/img5.png" data-ngThumb="assets/images/img5.png"> Grinch Kobes </a>
+                <a href="assets/images/img6.png" data-ngThumb="assets/images/img6.png"> Infrared 6 </a>
+                <a  href="assets/images/img7.png" data-ngThumb="assets/images/img7.png"> Nike x Off White Air Max </a>
+                <a href="assets/images/img8.png" data-ngThumb="assets/images/img8.png"> Off White Air Presto </a>
+              </div>
+        </section>
+    </div>
+
+</body>
+</html>
